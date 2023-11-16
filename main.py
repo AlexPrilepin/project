@@ -54,24 +54,13 @@ def hello():
         <div id="collapse33" class="collapse" aria-labelledby="heading33" data-parent="#accordionExample">
           <div style='border: 0px solid gray; width: 100%; align-items: center; margin: auto;'>
                 <div class="container">
-        <div class="main-list-title" style='padding-bottom: 15px'>
-            <h3>Ввод-вывод в txt</h3>
+        <div class="main-list-title" style='padding-bottom: 15px; justify-content: center; align-items: center'>
+            <h3 style='justify-content: center; align-items: center'>Ввод-вывод в txt</h3>
         </div>
         <div class="main-list-card">
             <div class="row" style='justify-content: center'>
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <div class="card_main" style='height: 280px;'>
-                        <div class="left__card">
-                                <p class="card__uptext" style='text-decoration: underline;'><h5>Ввод+вывод</h5><a>Халява</a><a>75% надо</a></p>
-                                <p style='padding-left: 0px; font-size: 15px; color: black; text-decoration: underline;' id="eggs" class="pushkindelivery btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse33" aria-expanded="false" aria-controls="collapse33"><i>Кратко по теме ->></i></p>
-                                <p class="card__lowtext"><a  style='color: black; text-decoration: underline; cursor: pointer;' href='https://olympiads.ru/zaoch/2012-13/lang.shtml'><i>Источник ->></i></a></p>
-                        </div>
-                        <div class="right__card ibg">
-                            <img src="https://remarketing.bz/content/uploads/2022/09/razbor.jpg" class="jpg" style='height: 280px'>
-                        </div>
-
-                    </div>
-                    <div id="collapse33" class="collapse" aria-labelledby="heading33">
+                    <div id="collapse33" class="collapse" aria-labelledby="collapse33">
                             <p style="border: 1px solid gray; padding: 3px;">Вообще, конкретно в олимпиадной проге файловый ввод-вывод почти отсутствует, разве что для оч. больших массивов данных, хотя... Едва ли. Но знать точно надо, ведь поможет не только на будущей работе, но и в отдельных олимпиадах, где по тем, или иным причинам нет возможности вводить и выводить данные. В принципе ваши действия - открыть, прочитать и перезаписать файл. Все)))</p>
                         </div>
                 </div>
@@ -83,138 +72,82 @@ def hello():
         
         
         <div class='turner' style='margin: auto; width: 80%; padding-top: 25px; display: flex; justify-content: space-around; font-size: 30px'>
-            <b>Темы:</b>
+            <b>Главы:</b>
         </div>
         <div class="accordion container" style='display: flex-inline; justify-content: space-around; align-content: stretch; width: 100%; margin-bottom: 30px;' id="accordionExample">
     <div width=90%;>
     <p style='margin-bottom: 30px; display: flex; justify-content: space-between; text-decoration: none; align-self: stretch;  width: 100%; margin-bottom: 30px; border-bottom: 2px solid gray; border-top: 2px solid gray; margin-top: 50px'>
     <a>
             <button style='text-decoration: none; color: black' class="btn btn-link btn-block text-left  turner" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
-              <strong>Циклы</strong>
+              <strong>Техника программирования</strong>
             </button>
 
 
 
             <button style='text-decoration: none; color: black' class="btn btn-link btn-block text-left turner" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
-              <strong>Массивы</strong>
+              <strong>Эффективность</strong>
             </button>
 
 
 
             <button style='text-decoration: none; color: black' class="btn btn-link btn-block text-left  turner" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-              <strong>Функции</strong>
+              <strong>Сортировка и поиск</strong>
             </button>
 
 
 
             <button style='text-decoration: none; color: black' class="btn btn-link btn-block text-left turner" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
-              <strong>TXT-io</strong>
+              <strong>Структуры данных</strong>
             </button>
 
 
 
             <button style='text-decoration: none; color: black' class="btn btn-link btn-block text-left turner" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-              <strong>Рекурсия</strong>
+              <strong>Динамическое программирование</strong>
             </button>
 
 
 
             <button style='text-decoration: none; color: black' class="btn btn-link btn-block text-left turner" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
-              <strong>Алг. Евклида</strong>
+              <strong>Алгоритмы на графах</strong>
             </button>
-
-
-            <button style='text-decoration: none; color: black' class="btn btn-link btn-block text-left turner" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
-              <strong>Простые числа</strong>
-            </button>
-
-
-
 
             </a>
             <a>
 
-
+            <button style='text-decoration: none; color: black' class="btn btn-link btn-block text-left turner" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+              <strong>Избранные вопросы проектирования алгоритмов</strong>
+            </button>
 
 
             <button style='text-decoration: none; color: black' class="btn btn-link btn-block text-left  turner" type="button" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
-              <strong>Сортировки</strong>
+              <strong>Запросы по диапазону</strong>
             </button>
 
 
 
             <button style='text-decoration: none; color: black' class="btn btn-link btn-block text-left  turner" type="button" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
-              <strong>Бин.поиск</strong>
+              <strong>Алгоритмы на деревьях</strong>
             </button>
 
 
 
             <button style='text-decoration: none; color: black' class="btn btn-link btn-block text-left turner" type="button" data-toggle="collapse" data-target="#collapse10" aria-expanded="true" aria-controls="collapse10">
-              <strong>Посл. Контейнеры</strong>
+              <strong>Математика</strong>
             </button>
 
 
 
             <button style='text-decoration: none; color: black' class="btn btn-link btn-block text-left turner" type="button" data-toggle="collapse" data-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
-              <strong>Графы</strong>
-            </button>
-
-
-
-            <button style='text-decoration: none; color: black' class="btn btn-link btn-block text-left turner" type="button" data-toggle="collapse" data-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
-              <strong>Математика</strong>
-            </button>
-
-
-                <button style='text-decoration: none; color: black' class="btn btn-link btn-block text-left turner" type="button" data-toggle="collapse" data-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
-              <strong>Множества</strong>
-            </button>
-
-            <button style='text-decoration: none; color: black' class="btn btn-link btn-block text-left turner" type="button" data-toggle="collapse" data-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
-              <strong>Сложность</strong>
-            </button>
-
-            </a>
-            <a>
-
-            <button style='text-decoration: none; color: black' class="btn btn-link btn-block text-left turner" type="button" data-toggle="collapse" data-target="#collapse15" aria-expanded="true" aria-controls="collapse15">
-              <strong>Динамика</strong>
-            </button>
-
-
-
-
-            <button style='text-decoration: none; color: black' class="btn btn-link btn-block text-left  turner" type="button" data-toggle="collapse" data-target="#collapse16" aria-expanded="false" aria-controls="collapse16">
-              <strong>Комбинаторика</strong>
-            </button>
-
-
-
-            <button style='text-decoration: none; color: black' class="btn btn-link btn-block text-left  turner" type="button" data-toggle="collapse" data-target="#collapse17" aria-expanded="false" aria-controls="collapse17">
               <strong>Геометрия</strong>
             </button>
 
 
 
-            <button style='text-decoration: none; color: black' class="btn btn-link btn-block text-left turner" type="button" data-toggle="collapse" data-target="#collapse18" aria-expanded="true" aria-controls="collapse18">
-              <strong>С.И.</strong>
+            <button style='text-decoration: none; color: black' class="btn btn-link btn-block text-left turner" type="button" data-toggle="collapse" data-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+              <strong>Алгоритмы работы со строками</strong>
             </button>
-
-
-
-            <button style='text-decoration: none; color: black' class="btn btn-link btn-block text-left turner" type="button" data-toggle="collapse" data-target="#collapse19" aria-expanded="false" aria-controls="collapse19">
-              <strong>Теория Чисел</strong>
-            </button>
-
-
-
-            <button style='text-decoration: none; color: black' class="btn btn-link btn-block text-left turner" type="button" data-toggle="collapse" data-target="#collapse20" aria-expanded="false" aria-controls="collapse20">
-              <strong>Структуры данных</strong>
-            </button>
-
-        <button style='text-decoration: none; color: black' class="btn btn-link btn-block text-left turner" type="button" data-toggle="collapse" data-target="#collapse21" aria-expanded="false" aria-controls="collapse21">
-              <strong>Жадный алг.</strong>
-            </button>
+           
 
 
 
@@ -224,9 +157,6 @@ def hello():
        <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#accordionExample">
           <div style='border: 0px solid gray; width: 100%; align-items: center; margin: auto;'>
                 <div class="container">
-        <div class="main-list-title" style='padding-bottom: 15px'>
-            <h3>Собственно, база по циклам:</h3>
-        </div>
         <div class="main-list-card">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
