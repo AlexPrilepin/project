@@ -55,7 +55,24 @@
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <div id="collapse33" class="collapse" aria-labelledby="collapse33">
                             <p style="border: 1px solid gray; padding: 3px;">Вообще, конкретно в олимпиадной проге файловый ввод-вывод почти отсутствует, разве что для оч. больших массивов данных, хотя... Едва ли. Но знать точно надо, ведь поможет не только на будущей работе, но и в отдельных олимпиадах, где по тем, или иным причинам нет возможности вводить и выводить данные. В принципе ваши действия - открыть, прочитать и перезаписать файл. Все)))</p>
+                            <form  action=""  method="post">
+                                <div class="form-group" style="align-items: center">
+                                    <label for="useless_text">Ваш код</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" name="useless_text"></textarea>
+                                </div>
+                                <p>
+                                    <input type="submit">
+                                </p>
+                            </form>
+                            {% if results[1] != -1 %}
+                                {% if results[1] == 1 %}
+                                    <p>{{ "VERDIKT : OK" }}</p>
+                                {% else %}
+                                    <p>{{ "VERDIKT : WA" }}</p>
+                                {% endif %}
+                            {% endif %}
                         </div>
+                    </div>
                 </div>
             </div>
         </div>
