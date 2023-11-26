@@ -1,2 +1,1 @@
-a, b = input(), input()
-print(a+" "+b)
+print(1)

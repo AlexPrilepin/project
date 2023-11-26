@@ -1,10 +1,23 @@
 import subprocess
 from subprocess import Popen, PIPE, STDOUT
+from contextlib import contextmanager
+import threading
+from datetime import datetime
+
+def timeout( p ):
+    if p.poll() is None:
+        p.kill()
+
+
 def get_output(filename, info_in_test):
     cmd = f"Python {filename}"
     info_in_test = list(map(str, info_in_test))
+    st = datetime.now()
     proc = Popen(cmd.split(' '), stdout=PIPE, stderr=PIPE, stdin=PIPE, text=True)
-    (output, error)  = proc.communicate(input="\n".join(info_in_test))
+    try:
+        (output, error) = proc.communicate(input="\n".join(info_in_test), timeout=3)
+    except:
+        output, error = "", "TLTLTLTLT"
     result = str(output).strip("'")
     if "\\n" in result:
         result = str(result).split("\\n")
@@ -30,26 +43,12 @@ def tests_operator(code, filename2, tests_file):
         for i in ts:
             all_tests.append(i.strip("\n").split("\n"))
     good = True
+
     for i in all_tests:
-        if get_output(filename1, i) != get_output(filename2, i):
+        aaa = get_output(filename1, i)
+        bbb = get_output(filename2, i)
+        print(aaa, bbb, i)
+        if aaa != bbb:
             good = False
             break
-    return good
-
-(
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-print(get_output("test_1.py", [1, 2]))
-)
+    return int(good)
